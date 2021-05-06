@@ -3,7 +3,7 @@ body {background-color: #3c3c3c;}
     padding: 9px 9px 9px 9px;
     color: #fff;
     background-color: #000000bd;
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
     text-align: center;
     overflow: hidden;
@@ -28,7 +28,7 @@ body {background-color: #3c3c3c;}
     margin-left: auto;
     }
     .Blocker-1 {
-    background-image: url(../img/fire-font.jpg);
+    background-image: url(../img/night-cityscape-city-urban-landscape-lights.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +89,7 @@ body {background-color: #3c3c3c;}
     font-family: Montserrat, sans-serif;
     }
     .Blocker-7 {
-    background-image: url(../img/Lights_multicolor_bokeh_optical_fiber-Vector_Design_HD_Wallpaper_1366x768.jpg);
+    background-image: url(../img/7041436-doha-qatar-hd.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
