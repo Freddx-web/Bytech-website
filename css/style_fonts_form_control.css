@@ -1,5 +1,17 @@
 body {background-color: #3c3c3c;}
-#class-icons{
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+#class-icons {
     padding: 9px 9px 9px 9px;
     color: #fff;
     background-color: #000000bd;
@@ -114,14 +126,11 @@ body {background-color: #3c3c3c;}
     margin-bottom: 20px;
     color: #ddd;
   }
-  .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  padding: 10px;
-}
-.title {
-  color: grey;
-  font-size: 18px;
-}
+
+  .container-fluid {
+    background-image: linear-gradient(to top, #3b456d 0%, #000 40%);color: #fff;padding: 100px;
+  }
+  .container-fluid-custom {
+    background-color: #000;
+    padding: 50px;
+  }
