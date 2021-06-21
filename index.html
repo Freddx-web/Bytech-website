@@ -9,6 +9,7 @@
   <!--style-->
   <link rel="stylesheet" type="text/css" href="css/style_container_news.css">
   <link rel="stylesheet" type="text/css" href="css/style_fonts_form_control.css">
+  <link rel="stylesheet" type="text/css" href="css/style_loader_Overlay.css">
   <!--.bootstrap-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -19,7 +20,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <style type="text/css">
     body {background-color: #3c3c3c;}
-
     #class-icons{
     padding: 9px 9px 9px 9px;
     color: #fff;
@@ -31,10 +31,26 @@
     padding: 18px;
     border-radius: 5px;
     }
-          
+    p {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+    }
+
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    } 
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom" style="background-color: #3498db;;">
 <!----------------------HEADER-------------------------------->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -167,8 +183,8 @@
     <div class="col-sm-8">
       <h3>Proyectos</h3>
       <p>
-        La creatividad y el entusiasmos lo es todo, en un mundo que cambia cada día, y a veces da miedo 
-        empezar en la era digital por no estar al tanto.<br> No te preocupes aquí Te daremos consejos y ejemplos de cómo crear tus proyectos y cómo moverte el mundo de la programación.
+        La creatividad y el entusiasmos lo es todo, en un mundo que cambia cada día <br>y a veces da miedo 
+        empezar en la era digital por no estar al tanto. No te preocupes aquí Te daremos consejos y ejemplos de cómo crear tus proyectos y cómo moverte el mundo de la programación.
       </p>
       <h4><a href="https://freddx-web.github.io/Conceptos-basicos-Cloud/index.html" class="btn btn-success btn-block">Mas informacion</a></h4>
       <br>
@@ -202,10 +218,12 @@
     <br>
     <div class="col-sm-8">
       <br>
+      <br>
       <span class="slideanim"><img style="text-align: center;" src="https://img.icons8.com/color/94/000000/umbrella.png"/></span>
       <h1 class="title" style="font-size: 60px; color: #fff">
         Bytech
       </h1>
+      <br>
       <br>
     </div>
     <div class="col-sm-4">
@@ -227,8 +245,6 @@
       <br>
       <img src="icons/icons8-bootstrap-32.png">
       <img src="icons/icons8-c++-32.png">
-      <img src="icons/icons8-c-programming-32.png">
-      <img src="icons/icons8-c-sharp-logo-32.png">
       <img src="icons/icons8-android-os-32.png">
       <img src="icons/icons8-html-5-32.png">
       <img src="icons/icons8-java-32.png">
@@ -236,6 +252,9 @@
       <img src="icons/icons8-ios-logo-32.png">
       <img src="icons/icons8-node-js-32.png">
       <img src="icons/icons8-google-play-32.png">
+      <img src="https://img.icons8.com/fluent/32/000000/visual-studio-code-2019.png"/>
+      <img src="https://img.icons8.com/fluent/32/000000/laravel.png"/>
+      <img src="https://img.icons8.com/fluent/32/000000/sublime-text.png"/>
       <img src="icons/icons8-css3-32.png">
       <img src="icons/icons8-php-logo-32.png">
       <img src="icons/icons8-python-32.png">
@@ -243,6 +262,7 @@
       <img src="icons/icons8-vue-js-32.png">
       <img src="icons/icons8-github-32.png">
       <img src="icons/icons8-git-32.png">
+      <img src="https://img.icons8.com/color/32/000234/npm.png"/>
       <br>
       <br>
 </div>
@@ -254,6 +274,19 @@
   <br>
 </footer>
 </div>
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 <script src="js/openNav_hidden.js"></script>
 <script src="js/openNav_show.js"></script>
 </body>
