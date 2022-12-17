@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bytech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--style-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style_fonts_form_control.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/style_loader_Overlay.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style_container_news.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <style type="text/css">
+    body {background-color: #3c3c3c; font-size: 12px;}
+    #class-icons{
+    padding: 9px 9px 9px 9px;
+    color: #fff;
+    background-color: #000000bd;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 18px;
+    border-radius: 5px;
+    }
+    p {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+    }
+
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    } 
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom" style="background-color: #3498db;;">
+<!----------------------HEADER-------------------------------->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!---------------logo----------------------------------->
+      <div><span style="cursor:pointer" onclick="openNav()">
+        <a class="navbar-brand" href="#myPage"> Bytech</a></span> 
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage" title="To Top"><img src="https://img.icons8.com/windows/20/000000/home.png"/> Home</a></li>
+        <li><a href="https://freddx-web.github.io/Conceptos-basicos-frontend/index.html"><img src="https://img.icons8.com/windows/20/000000/code.png"/> Frontend</a></li>
+        <li><a href="https://freddx-web.github.io/Conceptos-basicos-Backend/index.html"><img src="https://img.icons8.com/ios-glyphs/18/000000/code-file.png"/> Backend</a></li>
+        <li><a href="https://freddx-web.github.io/javascript-concept/"><img src="https://img.icons8.com/ios-filled/18/000000/javascript.png"/> Javascript</a></li>
+        <li><a href="#download"> <img src="https://img.icons8.com/windows/20/000000/cloud.png"/> Nube </a></li>
+        <li><a href="#app"><img src="https://img.icons8.com/windows/20/000000/touchscreen-smartphone.png"/> App</a></li>
+        <li><a href="#"><img src="https://img.icons8.com/fluent/20/000000/github.png"/></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--------------------------------------------------------->
+<div class="Blocker-1 text-center" id='myPage'>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 style="font-size: 55px;"><img style="text-align: center;" src="https://img.icons8.com/color/64/000000/umbrella.png"/>Bytech</h1>
+    <p>Una plataforma bajo el paraguas de Software, Apps, Open Source, AI, <br>donde compartimos informacion, aplicaciones, clases, framework, website, programadores, blogs, ciberseguridad.</p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-2 text-center">
+  <div class="row">
+    <br>
+    <div class="col-sm-2">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h3>Conectarse al mundo </h3>
+      <p>Aqui proporcionaremos las tendencias tecnologicas e informacion más innovadoras a medida que el mundo esta avanzando, 
+        para estar al tano de todas las herramientas digitales</p>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-3 text-center" id="projects">
+  <div class="row">
+    <div class="col-sm-7">
+      <h3>Vision</h3>
+      <p>Sea innovador o no, nuestro medio es llevar sus fortalezas a la práctica, y su debilidades al exito, con el fin de detectar retrasos de infractrutura, identificar errores, analizar el comportamiento de los programas y hasta de alertar los medidores que no estén operando.</p>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo" id="logo-1"></span>
+    </div>
+    <br>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-4 text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-bitcoin logo slideanim"></span>
+    </div>
+    <div class="col-sm-7">
+      <h3>Criptomonedas</h3>
+      <p>Para poder aprovechar los cambios financieros en el mundo, y como saber tener ventajas del dinero que cada vez se hace digital, se toma en cuenta los <b>Wallets</b>, la bolsa de valores <b>stock Exchange</b> y <b>Criptomonedas</b> como la forma en que hoy debemos adaptarnos a la idea de que es posible que el dinero deje definitivamente su forma física para convertirse en un medio de pago digital.
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-5 text-center">
+  <div class="row">
+    <div class="col-sm-7">
+      <h3>Machine Learning</h3>
+      <p>
+        A través de algoritmos, dota a los ordenadores de la capacidad de identificar patrones en datos masivos y elaborar predicciones (análisis predictivo) en tiempo real. Este tutorial es útil para la previsión y el <b>Análisis de datos forense</b>.
+
+      </p>
+      <h4><a href="#" class="btn btn-success btn-block">Mas informacion</a></h4>
+      <br>
+      <br>
+    </div>
+    <br>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cog logo" id="logo-1"></span>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-6 text-center">
+  <div class="row">
+    <br>
+    <br>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo slideanim">
+    </div>
+    <div class="col-sm-7">
+      <h3>Seguridad</h3> 
+      <p>
+        Nos enfocamos en la <b>Cybersecurity</b> seguridad informática.<br>Informacion detallada de la infraestructura computacional y todo lo vinculado con la misma, y especialmente la información vinculada a Malware, Scripts Maliciosos, y los métodos que utilizan los
+        hackers <b>Black Hat</b> y <b>Cracker's</b>, contenido utiles para protegernos y evitarlos.
+      </p>
+      <h4><a href="https://freddx-web.github.io/Conceptos-basicos-Cyberseguridad/index.html" class="btn btn-info btn-block">Mas informacion</a></h4>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-7 text-center">
+  <div class="row">
+    <div class="col-sm-7">
+      <h3>Produccion de contenidos</h3>
+      <p>
+       La creatividad y el entusiasmos lo es todo, en un mundo que cambia cada día <br>y a veces da miedo 
+       empezar en la era digital por no estar al tanto. Los contenidos digitales son herramientas muy poderosas cuando 
+       se utilizan con fines comerciales. A través de estos, las marcas pueden conectar racional y emocionalmente con las audiencias, 
+       inspirar confianza, generar empatía, posicionar la imagen corporativa o dar a conocer los valores empresariales, entre otros.
+      </p>
+      <h4><a href="https://freddx-web.github.io/Conceptos-basicos-Cloud/index.html" class="btn btn-success btn-block">Mas informacion</a></h4>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-flash slideanim"></span>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-4 text-center" id="app">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-phone logo slideanim">
+    </div>
+    <div class="col-sm-7">
+      <h3>App</h3>
+      <p>
+        Las <b>Apps</b> a evolucionado en mundo que nos rodean, como verás el año 2020 ha cambiado el mundo que conociamos de muchas formas y manera para vivir, nos ha llevado a adaptarnos hasta el punto de reinventarnos, en un mundo donde puede ser observado en nuestras <b>smartphone</b>, <b>tables</b>, <b>laptops</b>, interconectados.
+      <br>
+      <br>
+        Las <b>tecnologias</b> y los <b>Avances</b>, aprender o estar debajo del <a href="#">paragua<img style="text-align: center;" src="https://img.icons8.com/color/24/000000/umbrella.png"/></a> de la innovacion.
+      </p>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-8 text-center">
+  <div class="row">
+    <br>
+    <div class="col-sm-7">
+      <br>
+      <br>
+      <span class="slideanim"><img style="text-align: center;" src="https://img.icons8.com/color/94/000000/umbrella.png"/></span>
+      <h1 class="title" style="font-size: 60px; color: #fff">
+        Bytech
+      </h1>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <img src="img/52725397_2095956053814343_2789185348666654720_n.jpg" style="height: 100px; display:block;margin:auto; opacity: 0.8; width: 100px; border-radius: 100%; "><br>
+      <div id="class-icons">
+        Developer / Informatico
+        <br>
+          <a href="https://www.linkedin.com/in/freddr-ruiz-90932b202/"><img src="https://img.icons8.com/color/32/000000/linkedin.png"/>Linkedin</a>
+          <a href="https://www.instagram.com/dannyx_299/"><img src="https://img.icons8.com/fluent/32/000000/instagram-new.png"/>Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-10 text-center">
+  <div class="row">
+    <br>
+    <br>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo slideanim">
+    </div>
+    <div class="col-sm-7">
+      <h3>Proyectos</h3> 
+      <img src="icons/icons8-bootstrap-32.png">
+      <img src="icons/icons8-c++-32.png">
+      <img src="icons/icons8-android-os-32.png">
+      <img src="icons/icons8-html-5-32.png">
+      <img src="icons/icons8-java-32.png">
+      <img src="icons/icons8-javascript-32.png">
+      <img src="icons/icons8-ios-logo-32.png">
+      <img src="icons/icons8-node-js-32.png">
+      <img src="icons/icons8-google-play-32.png">
+      <img src="https://img.icons8.com/fluent/32/000000/visual-studio-code-2019.png"/>
+      <img src="https://img.icons8.com/fluent/32/000000/laravel.png"/>
+      <img src="https://img.icons8.com/fluent/32/000000/sublime-text.png"/>
+      <img src="icons/icons8-css3-32.png">
+      <img src="icons/icons8-php-logo-32.png">
+      <img src="icons/icons8-python-32.png">
+      <img src="icons/icons8-react-native-32.png">
+      <img src="icons/icons8-vue-js-32.png">
+      <img src="icons/icons8-github-32.png">
+      <img src="icons/icons8-git-32.png">
+      <img src="https://img.icons8.com/color/32/000234/npm.png"/>
+      <img src="https://img.icons8.com/color/32/undefined/mongodb.png"/>
+      <img src="https://img.icons8.com/color/32/undefined/mysql-logo.png"/>
+      <img src="https://img.icons8.com/color/32/undefined/microsoft-sql-server.png"/>
+      <img src="https://img.icons8.com/color/32/undefined/linux--v1.png"/>
+      <p>
+        <br>
+        Servicio multiplataformaa de desarrollo de aprendizaje de programación, de investigación y
+        desarrollo de <b>Open Source</b> y <b>Machine learning</b> para <b>Apps.</b> Asi facilita a cualquier funcionamiento de <b>Solfware</b> y desarrollo, ya sea <b>Android</b>, <b>iOS</b> Y <b>Wedsite</b>.
+      </p>
+      <h4><a href="https://freddx-web.github.io/open-source-page/" class="btn btn-info btn-block">Mas informacion</a></h4>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------->
+<div class="Blocker-9 text-center" id="download">
+  <div class="row">
+    <div class="col-sm-8">
+      <h3>Cloud Computing "La nube"</h3>
+      <p>
+        El <b>cloud computing</b> permite acceder a un gran volumen de información relativa a la actividad de las empresa sin necesidad de invertir en una infraestructura para acceder y disponer de la misma. Es muy importante el ahorro destinado a hardware, software, seguridad, soporte, mantenimiento, etc.
+      </p>
+      <h4><a href="https://freddx-web.github.io/cloud-service-concept/" class="btn btn-success btn-block">Mas informacion</a></h4>
+      <br>
+      <br>
+    </div>
+    <br>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cloud logo" id="logo-1"></span>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid-custom text-center" id="myPage">
+  <a href="#" title="To Top">
+    <span class="fa fa-chevron-up"></span>
+  </a>
+  <br>
+  <br>
+</footer>
+</div>
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<script src="js/openNav_hidden.js"></script>
+<script src="js/openNav_show.js"></script>
+</body>
+</html>
